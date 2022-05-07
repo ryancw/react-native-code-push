@@ -205,7 +205,7 @@ static NSString *const LatestRollbackCountKey = @"count";
 
 + (NSString *)getApplicationSupportDirectory
 {
-    NSString *applicationSupportDirectory = [NSSearchPathForDirectoriesInDomains(NSApplicationSupportDirectory, NSUserDomainMask, YES) objectAtIndex:0];
+    NSString *applicationSupportDirectory = [NSSearchPathForDirectoriesInDomains(NSCachesDirectory, NSUserDomainMask, YES) objectAtIndex:0];
     return applicationSupportDirectory;
 }
 
